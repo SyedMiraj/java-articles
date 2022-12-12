@@ -1,0 +1,17 @@
+If you want to be a better java developer and want to write code that excecutes within a short span of time by utilizing 
+maximum of CPU then multithreading will be the key. Multithreading is basically a process of concurrent execution for two or more parts of a 
+task and each part of that task is call Thread. Spring provides an easy way of handling complex tasks, by abstractions for asynchronous execution of tasks by 
+using the TaskExecutor interface. It is  very much usefull as it runs complex activities on background without interfering the main program.
+
+Lets first create a simple java web project from spring.io. We will configure the asynchronous execution in AsyncConfig class.
+
+-- code and picture
+
+
+Here @Configuration will indicate that AyncConfig class has @Bean definition methods and @EnableAsync will enable asynchronous process.
+Before going to next step, we need to understand the TaskExecutor interface. Some commonly used inplementations are ThreadPoolTaskExecutor,  
+ThreadPoolTaskScheduler and SimpleAsyncTaskExecutor. 
+-> ThreadPoolTaskExecutor
+
+
+
